@@ -5,6 +5,9 @@ pipeline {
             args ' -v /tmp/.m2:/tmp/.m2'
         }
     }
+    tools {
+        docker 'docker' 
+    }
     stages {
         stage('Build') {
             steps {
