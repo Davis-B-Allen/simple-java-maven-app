@@ -6,7 +6,7 @@ pipeline {
         }
     }
     tools {
-        org.jenkinsci.plugins.docker.commons.tools.DockerTool 'dockerlocal' 
+        'org.jenkinsci.plugins.docker.commons.tools.DockerTool' 'dockerlocal'
     }
     stages {
         stage('Build') {
