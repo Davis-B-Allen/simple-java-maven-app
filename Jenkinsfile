@@ -5,6 +5,9 @@ pipeline {
             args ' -v /tmp/.m2:/tmp/.m2'
         }
     }
+    environment {
+      PATH = "/usr/local/bin:$PATH"
+    }
     stages {
         stage('Build') {
             steps {
